@@ -1,0 +1,16 @@
+<p>
+  dogs works!
+</p>
+<div>
+  <label >
+    <input [(ngModel)]="dog.name" type="text" >
+  </label>
+  <button>
+    add Dog
+  </button>
+</div>
+<ul class="dogs">
+  <li *ngFor="let dog of dogs">
+    <span class="badge">{{dog.id}}</span> {{dog.name}}
+  </li>
+</ul>
